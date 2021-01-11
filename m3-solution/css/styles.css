@@ -9,6 +9,9 @@ body {
   color: #EDC41C;
   padding: 20px;
   
+ .p {
+    background-color: #4F4700;
+   }  
  }
   #main-content {
   background-color: #4F4726;
