@@ -1,13 +1,24 @@
 body {
   font-size: 16px;
   color: #fff;
-  background-color: #616121;
+  background-color: #032;
+ } 
  
+ #titulo {
+  font-size: 26px;
+  color: #EDC41C;
+  padding: 20px;
+  
+ }
+  #main-content {
+  background-color: #4F4726;
+  padding: 20px;
+ }
 
-/** HEADER **/
-#header-nav {
-  background-color: #262319;
-  border-radius: 0;
-  border: 0;
-  text-align: right;
+/********** mobile xs only **********/
+@media  (max-width: 575px) {
+  .container  {
+    width: 60%;
+  }
+
 }
