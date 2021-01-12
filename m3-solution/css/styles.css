@@ -9,14 +9,19 @@ body {
   color: #EDC41C;
   padding: 20px;
   background-color: #004700;
+<<<<<<< HEAD
    }  
 
  #main-content {
+=======
+ }
+  #main-content {
+>>>>>>> 3d200fa77e46332a635fba996e57926b082756b1
   background-color: #4F4726;
   padding: 20px;
  }
 
-/********** mobile xs only **********/
+/********** mobile xs only *f*********/
 @media  (max-width: 575px) {
   .container  {
     width: 60%;
