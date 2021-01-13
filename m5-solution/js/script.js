@@ -87,6 +87,7 @@ $ajaxUtils.sendGetRequest(
   buildAndShowHomeHTML,
   true); // Explicitly setting the flag to get JSON from server processed into an object literal
 });
+console.log("buildA : " + buildAndShowHomeHTML);
 // *** finish **
 
 
@@ -109,8 +110,8 @@ function buildAndShowHomeHTML (categories) {
       categoryHtml,
       function (categoryHtml) {
         
-        var chosenCategoryShortName = chooseRandomCategory(categories).name
-          
+        var chosenCategoryShortName = chooseRandomCategory(categories).name;
+          console.log("choosenC : " + chosenCategoryShortName);
 
       // TODO: STEP 3: Substitute {{randomCategoryShortName}} in the home html snippet with the
       // chosen category from STEP 2. Use existing insertProperty function for that purpose.
@@ -127,11 +128,13 @@ function buildAndShowHomeHTML (categories) {
 
       
       var homeHtmlToInsertIntoMainPage = categoryHtml;
-      var name = "" + chosenCategoryShortName
+      var name = "" + chosenCategoryShortName;
+      console.log("name "+name);
       var short_name = chosenCategoryShortName.short_name;
       homeHtmlToInsertIntoMainPage =
-      insertProperty(homeHtmlToInsertIntoMainPage, "randomCategoryShortName", name);
-      homeHtmlToInsertIntoMainPage = insertProperty(homeHtmlToInsertIntoMainPage,"short_name", short_name);
+      insertProperty(homeHtmlToInsertIntoMainPage, "randomCategoryShortName", short_name);
+      homeHtmlToInsertIntoMainPage =
+      //insertProperty(homeHtmlToInsertIntoMainPage,"short_name", short_name);
 
 
       // TODO: STEP 4: Insert the the produced HTML in STEP 3 into the main page
